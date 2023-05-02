@@ -313,10 +313,7 @@ initContainers: {}
   #   volumeMounts:
   #     - mountPath: /tmp/foo
   #       name: foo
-
-#extraVolumeMounts: []
-#
-#extraVolumes: []
+#####  my nifi container storage setting
 extraVolumeMounts:
   - name: mycustomlibs
     mountPath: /data1
