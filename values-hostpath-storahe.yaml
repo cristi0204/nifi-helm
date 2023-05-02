@@ -1,9 +1,17 @@
   extraVolumeMounts:
-    - name: mycustomlibs
+    - name: disk0 #just a name reference
+      mountPath: /data0
+  extraVolumes: # this will create the volume from the directory
+    - name: disk0 #needs to match the above
+      hostPath:
+        path: "/datadrive0" # actual mountpoint on kubernetes node
+  extraVolumeMounts:
+    - name: disk1 #just a name reference
       mountPath: /data1
   extraVolumes: # this will create the volume from the directory
-    - name: mycustomlibs
+    - name: disk1 #needs to match the above
       hostPath:
         path: "/datadrive1"
   properties:
     customLibPath: "/data1"
+  
