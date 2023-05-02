@@ -1,0 +1,9 @@
+  extraVolumeMounts:
+    - name: mycustomlibs
+      mountPath: /data1
+  extraVolumes: # this will create the volume from the directory
+    - name: mycustomlibs
+      hostPath:
+        path: "/datadrive1"
+  properties:
+    customLibPath: "/data1"
