@@ -320,9 +320,9 @@ extraVolumeMounts:
 extraVolumes: # this will create the volume from the directory
   - name: mycustomlibs
     hostPath:
-      path: "/datadrive1"
+      path: /datadrive1
 properties:
-  customLibPath: "/data1
+  customLibPath: /data1
 
 
 ## Extra containers
