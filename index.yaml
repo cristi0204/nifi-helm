@@ -3,7 +3,7 @@ entries:
   nifi:
   - apiVersion: v2
     appVersion: 1.16.3
-    created: "2023-05-12T12:18:57.994002+03:00"
+    created: "2023-05-12T12:26:33.000344+03:00"
     dependencies:
     - condition: zookeeper.enabled
       name: zookeeper
@@ -39,10 +39,48 @@ entries:
     urls:
     - nifi-1.1.4.tgz
     version: 1.1.4
+  - apiVersion: v2
+    appVersion: 1.16.3
+    created: "2023-05-12T12:26:33.007939+03:00"
+    dependencies:
+    - condition: zookeeper.enabled
+      name: zookeeper
+      repository: https://charts.bitnami.com/bitnami
+      version: 9.2.7
+    - alias: registry
+      condition: registry.enabled
+      name: nifi-registry
+      repository: https://dysnix.github.io/charts/
+      version: 1.0.0
+    - condition: ca.enabled
+      name: ca
+      repository: ""
+      version: 1.0.1
+    - condition: openldap.enabled
+      name: openldap
+      repository: https://charts.helm.sh/stable
+      version: ~1.2.4
+    description: Apache NiFi is a software project from the Apache Software Foundation
+      designed to automate the flow of data between software systems.
+    digest: 517997f80915871502f79672da0460c863154f158f3fbd6b7796b029b58b4553
+    home: https://nifi.apache.org/
+    icon: https://svn.apache.org/repos/asf/nifi/site/trunk/images/niFi-logo-horizontal-scaled.png
+    keywords:
+    - nifi
+    - data
+    - process
+    maintainers:
+    - email: cristi0204@gmail.com
+      name: cristi
+      url: https://github.com/cristi0204
+    name: nifi
+    urls:
+    - charts/nifi-1.1.4.tgz
+    version: 1.1.4
   nifi-registry:
   - apiVersion: v2
     appVersion: 0.8.0
-    created: "2023-05-12T12:18:57.995282+03:00"
+    created: "2023-05-12T12:26:33.009288+03:00"
     description: A subproject of Apache NiFi to store and manage shared resources.
     digest: 4dda260f867c9a4941b7072496d2b69287fddad45ad64f87020adb8950fad9ab
     home: https://github.com/dysnix/charts/tree/master/dysnix/nifi-registry
@@ -58,7 +96,7 @@ entries:
   openldap:
   - apiVersion: v1
     appVersion: 2.4.48
-    created: "2023-05-12T12:18:57.995759+03:00"
+    created: "2023-05-12T12:26:33.009678+03:00"
     deprecated: true
     description: DEPRECATED - Community developed LDAP software
     digest: addd603ed45a87bc275c2d77d91b43b0c8b9ad987e6a160a68fefd49583c737c
@@ -78,7 +116,7 @@ entries:
       category: Infrastructure
     apiVersion: v2
     appVersion: 3.8.0
-    created: "2023-05-12T12:18:57.999375+03:00"
+    created: "2023-05-12T12:26:33.01184+03:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -102,4 +140,4 @@ entries:
     urls:
     - charts/zookeeper-9.2.7.tgz
     version: 9.2.7
-generated: "2023-05-12T12:18:57.986249+03:00"
+generated: "2023-05-12T12:26:32.991018+03:00"
