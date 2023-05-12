@@ -3,10 +3,10 @@ entries:
   ca:
   - apiVersion: v2
     appVersion: 1.11.4
-    created: "2023-05-12T13:03:05.858487145Z"
+    created: "2023-05-12T13:03:17.805334733Z"
     description: A Helm chart to deploy ca server to generate self-signed certificates
       using nifi-toolkit.
-    digest: d0a4b5db3bb275d9f057feaf84b4b86ae45c069b685d0e610593341148672171
+    digest: bc975c533ca78bdf4fea9b4d9cbad27d9e335c64096cd245217da89a69e3b288
     home: https://nifi.apache.org/
     icon: https://svn.apache.org/repos/asf/nifi/site/trunk/images/niFi-logo-horizontal-scaled.png
     keywords:
@@ -20,7 +20,7 @@ entries:
   nifi:
   - apiVersion: v2
     appVersion: 1.16.3
-    created: "2023-05-12T13:03:05.867836626Z"
+    created: "2023-05-12T13:03:17.814198765Z"
     dependencies:
     - condition: zookeeper.enabled
       name: zookeeper
@@ -59,7 +59,7 @@ entries:
   nifi-registry:
   - apiVersion: v2
     appVersion: 0.8.0
-    created: "2023-05-12T13:03:05.869676462Z"
+    created: "2023-05-12T13:03:17.815813102Z"
     description: A subproject of Apache NiFi to store and manage shared resources.
     digest: 4dda260f867c9a4941b7072496d2b69287fddad45ad64f87020adb8950fad9ab
     home: https://github.com/dysnix/charts/tree/master/dysnix/nifi-registry
@@ -75,7 +75,7 @@ entries:
   openldap:
   - apiVersion: v1
     appVersion: 2.4.48
-    created: "2023-05-12T13:03:05.870605094Z"
+    created: "2023-05-12T13:03:17.8165186Z"
     deprecated: true
     description: DEPRECATED - Community developed LDAP software
     digest: addd603ed45a87bc275c2d77d91b43b0c8b9ad987e6a160a68fefd49583c737c
@@ -95,7 +95,7 @@ entries:
       category: Infrastructure
     apiVersion: v2
     appVersion: 3.8.0
-    created: "2023-05-12T13:03:05.881731073Z"
+    created: "2023-05-12T13:03:17.820204809Z"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -119,4 +119,4 @@ entries:
     urls:
     - charts/zookeeper-9.2.7.tgz
     version: 9.2.7
-generated: "2023-05-12T13:03:05.857723133Z"
+generated: "2023-05-12T13:03:17.804751197Z"
