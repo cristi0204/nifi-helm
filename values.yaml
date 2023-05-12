@@ -2,7 +2,7 @@
 # Number of nifi nodes
 #replicaCount: 1
 
-# horizontalPodAutoscaler
+# horizontalPodAutoscaler settings (hpa.yaml)
 hpa:
   enabled: true
   maxReplicas: 1
@@ -111,6 +111,9 @@ properties:
     nifi.web.http.network.interface.default: eth0
     # listen to loopback interface so "kubectl port-forward ..." works
     nifi.web.http.network.interface.lo: lo
+    nifi.content.repository.archive.enabled: false
+    # nifi.security.allow.anonymous.authentication: true
+
 
   ## Include aditional processors
   # customLibPath: "/opt/configuration_resources/custom_lib"
@@ -321,15 +324,22 @@ initContainers: {}
   #     - mountPath: /tmp/foo
   #       name: foo
 #####  my nifi container storage setting
-extraVolumeMounts:
-  - name: mycustomlibs
-    mountPath: /data1
-extraVolumes: # this will create the volume from the directory
-  - name: mycustomlibs
-    hostPath:
-      path: /datadrive1
-properties:
-  customLibPath: /data1
+extraVolumeMounts: []
+extraVolumes: []
+# extraVolumeMounts:
+#   - name: disk0
+#     mountPath: /data0
+#   - name: disk1
+#     mountPath: /data1
+# extraVolumes: # this will create the volume from the directory
+#   - name: disk1
+#     hostPath:
+#       path: /datadrive1
+#   - name: disk0
+#     hostPath:
+#       path: /datadrive0
+# properties:
+#   customLibPath: /data1
 
 
 ## Extra containers
