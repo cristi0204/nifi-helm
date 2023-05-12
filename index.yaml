@@ -3,10 +3,10 @@ entries:
   ca:
   - apiVersion: v2
     appVersion: 1.11.4
-    created: "2023-05-12T13:02:27.067007732Z"
+    created: "2023-05-12T13:02:37.549622947Z"
     description: A Helm chart to deploy ca server to generate self-signed certificates
       using nifi-toolkit.
-    digest: 763ec0fd0e78c4762feb3d8cc17f8855055f5e5e5076c0aea2fe896831f54f6e
+    digest: 52f1d4e0adfbe1a4ecb7d6d32e7082144973e7461983368946e02c1f28a63df9
     home: https://nifi.apache.org/
     icon: https://svn.apache.org/repos/asf/nifi/site/trunk/images/niFi-logo-horizontal-scaled.png
     keywords:
@@ -20,7 +20,7 @@ entries:
   nifi:
   - apiVersion: v2
     appVersion: 1.16.3
-    created: "2023-05-12T13:02:27.085764112Z"
+    created: "2023-05-12T13:02:37.559375003Z"
     dependencies:
     - condition: zookeeper.enabled
       name: zookeeper
@@ -59,7 +59,7 @@ entries:
   nifi-registry:
   - apiVersion: v2
     appVersion: 0.8.0
-    created: "2023-05-12T13:02:27.087174035Z"
+    created: "2023-05-12T13:02:37.560949776Z"
     description: A subproject of Apache NiFi to store and manage shared resources.
     digest: 4dda260f867c9a4941b7072496d2b69287fddad45ad64f87020adb8950fad9ab
     home: https://github.com/dysnix/charts/tree/master/dysnix/nifi-registry
@@ -75,7 +75,7 @@ entries:
   openldap:
   - apiVersion: v1
     appVersion: 2.4.48
-    created: "2023-05-12T13:02:27.087747348Z"
+    created: "2023-05-12T13:02:37.561601021Z"
     deprecated: true
     description: DEPRECATED - Community developed LDAP software
     digest: addd603ed45a87bc275c2d77d91b43b0c8b9ad987e6a160a68fefd49583c737c
@@ -95,7 +95,7 @@ entries:
       category: Infrastructure
     apiVersion: v2
     appVersion: 3.8.0
-    created: "2023-05-12T13:02:27.090908823Z"
+    created: "2023-05-12T13:02:37.565390633Z"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -119,4 +119,4 @@ entries:
     urls:
     - charts/zookeeper-9.2.7.tgz
     version: 9.2.7
-generated: "2023-05-12T13:02:27.066415844Z"
+generated: "2023-05-12T13:02:37.54869513Z"
