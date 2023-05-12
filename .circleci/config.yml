@@ -11,4 +11,4 @@ jobs:
             - GITHUB_PAGES_REPO: cristi0204/helm-charts
             - HELM_CHART: nifi
             - HELM_VERSION: 3.9.0
-          command: wget -O - https://raw.githubusercontent.com/cristi0204/helm-chart-publisher/master/publish.sh | sh
+          command: wget -O - https://raw.githubusercontent.com/cristi0204/helm-github-pages/master/publish.sh | sh
