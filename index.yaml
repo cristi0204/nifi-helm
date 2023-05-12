@@ -1,0 +1,66 @@
+apiVersion: v1
+entries:
+  nifi-registry:
+  - apiVersion: v2
+    appVersion: 0.8.0
+    created: "2023-05-12T12:13:48.550874+03:00"
+    description: A subproject of Apache NiFi to store and manage shared resources.
+    digest: 4dda260f867c9a4941b7072496d2b69287fddad45ad64f87020adb8950fad9ab
+    home: https://github.com/dysnix/charts/tree/master/dysnix/nifi-registry
+    icon: https://svn.apache.org/repos/asf/nifi/site/trunk/images/niFi-logo-horizontal-scaled.png
+    maintainers:
+    - email: daniel@dysnix.com
+      name: daniel-yavorovich
+    name: nifi-registry
+    type: application
+    urls:
+    - charts/nifi-registry-1.0.0.tgz
+    version: 1.0.0
+  openldap:
+  - apiVersion: v1
+    appVersion: 2.4.48
+    created: "2023-05-12T12:13:48.554239+03:00"
+    deprecated: true
+    description: DEPRECATED - Community developed LDAP software
+    digest: addd603ed45a87bc275c2d77d91b43b0c8b9ad987e6a160a68fefd49583c737c
+    home: https://www.openldap.org
+    icon: http://www.openldap.org/images/headers/LDAPworm.gif
+    keywords:
+    - ldap
+    - openldap
+    name: openldap
+    sources:
+    - https://github.com/kubernetes/charts
+    urls:
+    - charts/openldap-1.2.7.tgz
+    version: 1.2.7
+  zookeeper:
+  - annotations:
+      category: Infrastructure
+    apiVersion: v2
+    appVersion: 3.8.0
+    created: "2023-05-12T12:13:48.556516+03:00"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      tags:
+      - bitnami-common
+      version: 1.x.x
+    description: Apache ZooKeeper provides a reliable, centralized register of configuration
+      data and services for distributed applications.
+    digest: 61b3d36fcdfce29b6658d503ddccc28389acdd52c0d765ca0fccf9183cfbab89
+    home: https://github.com/bitnami/charts/tree/master/bitnami/zookeeper
+    icon: https://bitnami.com/assets/stacks/zookeeper/img/zookeeper-stack-220x234.png
+    keywords:
+    - zookeeper
+    maintainers:
+    - name: Bitnami
+      url: https://github.com/bitnami/charts
+    name: zookeeper
+    sources:
+    - https://github.com/bitnami/bitnami-docker-zookeeper
+    - https://zookeeper.apache.org/
+    urls:
+    - charts/zookeeper-9.2.7.tgz
+    version: 9.2.7
+generated: "2023-05-12T12:13:48.548815+03:00"
